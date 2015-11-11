@@ -7,7 +7,6 @@
 //
 
 #import "UIViewController+LoadXIBDynamically.h"
-#import "AppDelegate+LoadXIBDynamically.h"
 #import "UINib+LoadXIBDynamically.h"
 
 static NSString const* LoadXIBDynamicallyDynamicNIB = @"LoadXIBDynamicallyDynamicNIB";

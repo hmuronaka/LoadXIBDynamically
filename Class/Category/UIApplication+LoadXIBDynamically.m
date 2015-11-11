@@ -1,12 +1,12 @@
 //
-//  AppDelegate+LoadXIBDynamically.m
+//  UIApplication+LoadXIBDynamically.h
 //  LoadXIBDynamically
 //
 //  Created by Muronaka Hiroaki on 2015/11/11.
 //  Copyright © 2015年 Muronaka Hiroaki. All rights reserved.
 //
 
-#import "AppDelegate+LoadXIBDynamically.h"
+#import "UIApplication+LoadXIBDynamically.h"
 #import "GCDWebServer/GCDWebDAVServer.h"
 #import "NSFileManager+loadXIBDynamically.h"
 #import <objc/runtime.h>
@@ -14,8 +14,7 @@
 static NSString const* LoadXIBDynamicallyWebDAVServer = @"LoadXIBDynamicallyWebDAVServer";
 static NSString const* LoadXIBDynamicallyUploadDirectory = @"LoadXIBDynamicallyUploadDirectory";
 
-@implementation AppDelegate (LoadXIBDynamically)
-
+@implementation UIApplication (LoadXIBDynamically)
 
 -(BOOL)lx_setupWebDAVServer {
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];

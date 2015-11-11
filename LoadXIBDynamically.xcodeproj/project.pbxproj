@@ -10,7 +10,7 @@
 		D16A43F93D6D09CBB2991D2A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E748F36CE134B3EDD44846D5 /* Pods.framework */; };
 		D6530B7B1BF325A700C12C6E /* background001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6530B7A1BF325A700C12C6E /* background001.jpg */; };
 		D6530B961BF339A700C12C6E /* LXDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B951BF339A700C12C6E /* LXDViewController.m */; };
-		D6530B9F1BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B981BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m */; };
+		D6530B9F1BF339B300C12C6E /* UIApplication+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B981BF339B300C12C6E /* UIApplication+LoadXIBDynamically.m */; };
 		D6530BA01BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B9A1BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.m */; };
 		D6530BA11BF339B300C12C6E /* UINib+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B9C1BF339B300C12C6E /* UINib+LoadXIBDynamically.m */; };
 		D6530BA21BF339B300C12C6E /* UIViewController+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B9E1BF339B300C12C6E /* UIViewController+LoadXIBDynamically.m */; };
@@ -41,8 +41,8 @@
 		D6530B7A1BF325A700C12C6E /* background001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background001.jpg; sourceTree = "<group>"; };
 		D6530B941BF339A700C12C6E /* LXDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXDViewController.h; path = Class/LXDViewController.h; sourceTree = SOURCE_ROOT; };
 		D6530B951BF339A700C12C6E /* LXDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXDViewController.m; path = Class/LXDViewController.m; sourceTree = SOURCE_ROOT; };
-		D6530B971BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+LoadXIBDynamically.h"; path = "Class/Category/AppDelegate+LoadXIBDynamically.h"; sourceTree = SOURCE_ROOT; };
-		D6530B981BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+LoadXIBDynamically.m"; path = "Class/Category/AppDelegate+LoadXIBDynamically.m"; sourceTree = SOURCE_ROOT; };
+		D6530B971BF339B300C12C6E /* UIApplication+LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+LoadXIBDynamically.h"; path = "Class/Category/UIApplication+LoadXIBDynamically.h"; sourceTree = SOURCE_ROOT; };
+		D6530B981BF339B300C12C6E /* UIApplication+LoadXIBDynamically.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+LoadXIBDynamically.m"; path = "Class/Category/UIApplication+LoadXIBDynamically.m"; sourceTree = SOURCE_ROOT; };
 		D6530B991BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+LoadXIBDynamically.h"; path = "Class/Category/NSFileManager+LoadXIBDynamically.h"; sourceTree = SOURCE_ROOT; };
 		D6530B9A1BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+LoadXIBDynamically.m"; path = "Class/Category/NSFileManager+LoadXIBDynamically.m"; sourceTree = SOURCE_ROOT; };
 		D6530B9B1BF339B300C12C6E /* UINib+LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINib+LoadXIBDynamically.h"; path = "Class/Category/UINib+LoadXIBDynamically.h"; sourceTree = SOURCE_ROOT; };
@@ -186,8 +186,8 @@
 		D6CEAAA11BF300E8001641B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D6530B971BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.h */,
-				D6530B981BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m */,
+				D6530B971BF339B300C12C6E /* UIApplication+LoadXIBDynamically.h */,
+				D6530B981BF339B300C12C6E /* UIApplication+LoadXIBDynamically.m */,
 				D6530B991BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.h */,
 				D6530B9A1BF339B300C12C6E /* NSFileManager+LoadXIBDynamically.m */,
 				D6530B9B1BF339B300C12C6E /* UINib+LoadXIBDynamically.h */,
@@ -357,7 +357,7 @@
 				D6530B961BF339A700C12C6E /* LXDViewController.m in Sources */,
 				D65E1A771BF3139A00B57597 /* SampleViewController.m in Sources */,
 				D6C493661BF33E6B0065525A /* LoadXIBDynamically.h in Sources */,
-				D6530B9F1BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m in Sources */,
+				D6530B9F1BF339B300C12C6E /* UIApplication+LoadXIBDynamically.m in Sources */,
 				D6CEAA841BF300E2001641B7 /* ViewController.m in Sources */,
 				D6CEAA811BF300E2001641B7 /* AppDelegate.m in Sources */,
 				D6CEAA7E1BF300E2001641B7 /* main.m in Sources */,

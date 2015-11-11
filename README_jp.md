@@ -23,7 +23,7 @@ pod 'LoadXIBDynamically', git: 'https://github.com/hmuronaka/LoadXIBDynamically.
 
 // AppDelegate.m
 
-#import "AppDelegate+LoadXIBDynamically.h"
+#import "UIApplication+LoadXIBDynamically.h"
 
 @interface AppDelegate ()
 @end
@@ -31,8 +31,8 @@ pod 'LoadXIBDynamically', git: 'https://github.com/hmuronaka/LoadXIBDynamically.
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self lx_setupWebDAVServer]; // <-- add.
-    return YES;
+  [[UIApplication sharedApplication] lx_setupWebDAVServer]; // <-- add
+  return YES;
 }
 ```
 

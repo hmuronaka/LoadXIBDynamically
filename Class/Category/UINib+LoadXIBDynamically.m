@@ -7,7 +7,7 @@
 //
 
 #import "UINib+LoadXIBDynamically.h"
-#import "AppDelegate+LoadXIBDynamically.h"
+#import "UIApplication+LoadXIBDynamically.h"
 
 @implementation UINib (LoadXIBDynamically)
 
@@ -22,8 +22,7 @@
 }
 
 +(instancetype)lx_loadDynamicallyWithNibName:(NSString*)nibName bundle:(NSBundle *)bundleOrNil {
-    AppDelegate* appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    NSString* path = [appDelegate lx_path];
+    NSString* path = [UIApplication sharedApplication].lx_path;
     
     if(!path) {
         return nil;

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+LoadXIBDynamically.h"
+#import "UIApplication+LoadXIBDynamically.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self lx_setupWebDAVServer];
+    [[UIApplication sharedApplication] lx_setupWebDAVServer];
     return YES;
 }
 
