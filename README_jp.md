@@ -84,3 +84,6 @@ $ > curl -T MyViewController.xib.lxd http://your iOS ipaddress:8080/
 
 4 当該ビューを再表示します。
 
+# LICENSE
+
+MIT LICENSE

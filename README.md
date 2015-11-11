@@ -76,3 +76,6 @@ $ > curl -T MyViewController.xib.lxd http://your iOS ipaddress:8080/
 
 
 
+# LICENSE
+
+MIT LICENSE
