@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SampleViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+   
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+   SampleViewController* vc = [[SampleViewController alloc] initWithNibName:@"SampleViewController" bundle:nil];
+    [self presentViewController:vc animated:YES completion:nil];  
 }
 
 - (void)didReceiveMemoryWarning {
