@@ -1,7 +1,7 @@
 # Load XIB Dynamically (LXD) iOS
 
 LXDはコンパイルすることなくXIBファイルをローディングするライブラリです。
-XIB上でビューの属性変更やAutoLayoutの制約を変更しても、即動作確認ができるようになります。
+XIB上でビューの属性変更やAutoLayoutの制約を変更しても、コンパイルせずに即動作確認ができるようになります。
 
 # Demo
 
