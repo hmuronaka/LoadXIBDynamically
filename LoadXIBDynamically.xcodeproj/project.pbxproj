@@ -16,6 +16,7 @@
 		D6530BA21BF339B300C12C6E /* UIViewController+LoadXIBDynamically.m in Sources */ = {isa = PBXBuildFile; fileRef = D6530B9E1BF339B300C12C6E /* UIViewController+LoadXIBDynamically.m */; };
 		D65E1A771BF3139A00B57597 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E1A751BF3139A00B57597 /* SampleViewController.m */; };
 		D65E1A781BF3139A00B57597 /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65E1A761BF3139A00B57597 /* SampleViewController.xib */; };
+		D6C493661BF33E6B0065525A /* LoadXIBDynamically.h in Sources */ = {isa = PBXBuildFile; fileRef = D6C493651BF33E6B0065525A /* LoadXIBDynamically.h */; };
 		D6CEAA7E1BF300E2001641B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CEAA7D1BF300E2001641B7 /* main.m */; };
 		D6CEAA811BF300E2001641B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CEAA801BF300E2001641B7 /* AppDelegate.m */; };
 		D6CEAA841BF300E2001641B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CEAA831BF300E2001641B7 /* ViewController.m */; };
@@ -51,6 +52,7 @@
 		D65E1A741BF3139A00B57597 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		D65E1A751BF3139A00B57597 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 		D65E1A761BF3139A00B57597 /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		D6C493651BF33E6B0065525A /* LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadXIBDynamically.h; path = Class/LoadXIBDynamically.h; sourceTree = "<group>"; };
 		D6CEAA791BF300E2001641B7 /* LoadXIBDynamically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadXIBDynamically.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CEAA7D1BF300E2001641B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6CEAA7F1BF300E2001641B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				D6530B941BF339A700C12C6E /* LXDViewController.h */,
 				D6530B951BF339A700C12C6E /* LXDViewController.m */,
+				D6C493651BF33E6B0065525A /* LoadXIBDynamically.h */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				D6530BA21BF339B300C12C6E /* UIViewController+LoadXIBDynamically.m in Sources */,
 				D6530B961BF339A700C12C6E /* LXDViewController.m in Sources */,
 				D65E1A771BF3139A00B57597 /* SampleViewController.m in Sources */,
+				D6C493661BF33E6B0065525A /* LoadXIBDynamically.h in Sources */,
 				D6530B9F1BF339B300C12C6E /* AppDelegate+LoadXIBDynamically.m in Sources */,
 				D6CEAA841BF300E2001641B7 /* ViewController.m in Sources */,
 				D6CEAA811BF300E2001641B7 /* AppDelegate.m in Sources */,
