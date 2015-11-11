@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+input=ARGV[0]
+input += ".xib" unless input.end_with?(".xib")
+out="#{input}.lxd"
+url=ARGV[1]
+
+`ibtool #{input} --compile #{out}`
+`curl -T #{out} #{url}`
