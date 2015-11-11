@@ -6,8 +6,10 @@
 //  Copyright © 2015年 Muronaka Hiroaki. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "UINib+LoadXIBDynamically.h"
 #import "UIApplication+LoadXIBDynamically.h"
+#import "UIDevice+LoadXIBDynamically.h"
 
 @implementation UINib (LoadXIBDynamically)
 
@@ -28,9 +30,8 @@
         return nil;
     }
     
-    NSString* tempNibName = [NSString stringWithFormat:@"%@.xib.lxd", nibName];
-    NSString* xibPath = [path stringByAppendingPathComponent:tempNibName];
-    NSData* xibData = [NSData dataWithContentsOfFile:xibPath];
+    NSString* nibFilePath = [self lx_nibFilePath:nibName];
+    NSData* xibData = [NSData dataWithContentsOfFile:nibFilePath];
     
     if( !xibData ) {
         return nil;
@@ -38,6 +39,33 @@
     
     UINib* dynamicNIB = [UINib nibWithData:xibData bundle:bundleOrNil];
     return dynamicNIB;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark private
+
++(NSString*)lx_nibFilePath:(NSString*)nibName {
+    NSString* path = [UIApplication sharedApplication].lx_path;
+    if(path == nil ) {
+        return nil;
+    }
+    
+    NSString* tempNibName;
+    if( [UIDevice currentDevice].lx_isIPad ) {
+        tempNibName = [NSString stringWithFormat:@"%@~ipad.xib.lxd", nibName];
+    } else {
+        tempNibName = [NSString stringWithFormat:@"%@~iphone.xib.lxd", nibName];
+    }
+    
+    NSString* nibFilePath = [path stringByAppendingPathComponent:tempNibName];
+    if( [[NSFileManager defaultManager] fileExistsAtPath:nibFilePath] ) {
+        return nibFilePath;
+    }
+    
+    tempNibName = [NSString stringWithFormat:@"%@.xib.lxd", nibName];
+    nibFilePath = [path stringByAppendingPathComponent:tempNibName];
+    return nibFilePath;
 }
 
 @end
