@@ -3,7 +3,6 @@
 # Load XIB Dynamically (LXD) iOS
 
 LXD is a simple library for loading xib dynamically.
-You can edit view's attributes and autolayouts fast.
 
 # Demo
 
@@ -62,8 +61,9 @@ or
 
 # Usage
 
-1 You edit a xib file from Xcode
-2 You upload a xib file to your app using ibtool and curl.
+1: You edit a xib file from Xcode
+
+2: You upload a xib file to your app using ibtool and curl.
 
 ```bash
 
@@ -72,7 +72,7 @@ $ > curl -T MyViewController.xib.lxd http://your iOS ipaddress:8080/
 
 ```
 
-3. You reload a view controller on the app.
+3: You reload a view controller on the app.
 
 
 
