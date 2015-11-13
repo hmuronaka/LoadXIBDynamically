@@ -3,7 +3,6 @@
 # Load XIB Dynamically (LXD) iOS
 
 LXD is a simple library for loading xib dynamically.
-You can edit view's attributes and autolayouts fast.
 
 # Demo
 
