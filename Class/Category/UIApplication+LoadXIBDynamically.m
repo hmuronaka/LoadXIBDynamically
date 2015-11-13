@@ -17,8 +17,12 @@ static NSString const* LoadXIBDynamicallyUploadDirectory = @"LoadXIBDynamicallyU
 @implementation UIApplication (LoadXIBDynamically)
 
 -(BOOL)lx_setupWebDAVServer {
+    return [self lx_setupWebDAVServerWithPort:8080];
+}
+
+-(BOOL)lx_setupWebDAVServerWithPort:(NSUInteger)port {
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    return [self lx_setupWebDAVServerWithBasePath:documentsPath port:8080];
+    return [self lx_setupWebDAVServerWithBasePath:documentsPath port:port];
 }
 
 -(BOOL)lx_setupWebDAVServerWithBasePath:(NSString*)path port:(NSUInteger)port {

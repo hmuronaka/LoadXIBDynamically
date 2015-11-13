@@ -11,6 +11,7 @@
 @interface UIApplication (LoadXIBDynamically)
 
 -(BOOL)lx_setupWebDAVServer;
+-(BOOL)lx_setupWebDAVServerWithPort:(NSUInteger)port;
 -(BOOL)lx_setupWebDAVServerWithBasePath:(NSString*)path port:(NSUInteger)port;
 -(NSString*)lx_path;
 
