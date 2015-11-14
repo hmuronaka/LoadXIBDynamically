@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LoadXIBDynamicallyPlugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D6AD12C61BF5B66F00D7CEF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D6CEAA781BF300E2001641B7</key>
 		<dict>
 			<key>primary</key>
