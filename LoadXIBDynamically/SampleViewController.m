@@ -34,10 +34,30 @@
 }
 */
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark action
+
 -(IBAction)pressedUpdate:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
         SampleViewController* vc = [[SampleViewController alloc] initWithNibName:@"SampleViewController" bundle:nil];
         [self.parentViewController presentViewController:vc animated:YES completion:nil];
+    }];
+}
+
+-(IBAction)pressedView:(UITapGestureRecognizer*)gesture {
+    [self animateView:gesture.view];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark private
+
+-(void)animateView:(UIView*)view {
+    [UIView animateWithDuration:1 animations:^{
+        view.transform = CGAffineTransformMakeRotation(M_PI);
+    } completion:^(BOOL finished) {
+        view.transform = CGAffineTransformMakeRotation(0);
     }];
 }
 
