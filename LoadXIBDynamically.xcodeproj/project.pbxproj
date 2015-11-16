@@ -53,7 +53,7 @@
 		D65E1A741BF3139A00B57597 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		D65E1A751BF3139A00B57597 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 		D65E1A761BF3139A00B57597 /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
-		D6659F321BF7CE6F003B20ED /* LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadXIBDynamically.h; path = Class/Core/LoadXIBDynamically.h; sourceTree = SOURCE_ROOT; };
+		D6659F321BF7CE6F003B20ED /* Cls_LoadXIBDynamically.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cls_LoadXIBDynamically.h; path = Class/Core/Cls_LoadXIBDynamically.h; sourceTree = SOURCE_ROOT; };
 		D6659F331BF7CE6F003B20ED /* LoadXIBDynamically.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadXIBDynamically.m; path = Class/Core/LoadXIBDynamically.m; sourceTree = SOURCE_ROOT; };
 		D6659F391BF7D1F3003B20ED /* LXDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXDViewController.h; path = Class/Core/LXDViewController.h; sourceTree = SOURCE_ROOT; };
 		D6659F3A1BF7D1F3003B20ED /* LXDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXDViewController.m; path = Class/Core/LXDViewController.m; sourceTree = SOURCE_ROOT; };
@@ -143,7 +143,7 @@
 			children = (
 				D6659F391BF7D1F3003B20ED /* LXDViewController.h */,
 				D6659F3A1BF7D1F3003B20ED /* LXDViewController.m */,
-				D6659F321BF7CE6F003B20ED /* LoadXIBDynamically.h */,
+				D6659F321BF7CE6F003B20ED /* Cls_LoadXIBDynamically.h */,
 				D6659F331BF7CE6F003B20ED /* LoadXIBDynamically.m */,
 			);
 			name = Core;

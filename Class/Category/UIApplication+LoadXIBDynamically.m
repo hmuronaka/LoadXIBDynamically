@@ -7,7 +7,7 @@
 //
 
 #import "UIApplication+LoadXIBDynamically.h"
-#import "../Core/LoadXIBDynamically.h"
+#import "Cls_LoadXIBDynamically.h"
 
 @implementation UIApplication (LoadXIBDynamically)
 

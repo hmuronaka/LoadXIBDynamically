@@ -6,7 +6,7 @@
 //  Copyright © 2015年 Muronaka Hiroaki. All rights reserved.
 //
 
-#import "LoadXIBDynamically.h"
+#import "Cls_LoadXIBDynamically.h"
 
 #import "GCDWebServer/GCDWebDAVServer.h"
 #import "NSFileManager+loadXIBDynamically.h"
