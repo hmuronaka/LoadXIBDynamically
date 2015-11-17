@@ -17,7 +17,9 @@ pod 'LoadXIBDynamically', git: 'https://github.com/hmuronaka/LoadXIBDynamically.
 
 # Prepare
 
-## AppDelegate.m
+## Objective-C
+
+### AppDelegate.m
 
 ```obj-c
 
@@ -36,7 +38,7 @@ pod 'LoadXIBDynamically', git: 'https://github.com/hmuronaka/LoadXIBDynamically.
 }
 ```
 
-## Target ViewController
+### Target ViewController
 
 ```obj-c
 
@@ -63,6 +65,55 @@ or
 }
 
 @end
+
+```
+
+## Swift
+
+### Bridging-Header
+
+```obj-c
+// YourProject-Bridging-Header.h
+
+#import <LoadXIBDynamically/LoadXIBDynamically.h>
+
+```
+
+### AppDelegate
+
+```swift
+// AppDelegate.swift
+
+   
+   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+      UIApplication.sharedApplication().lx_setupWebDAVServer() // <-- add
+  }
+```
+
+### ViewController
+
+```swift
+
+// ViewController.swift
+
+import LoadXIBDynamically // <-- add
+
+class ViewController: LXDViewController // <-- change from UIViewController to LXDViewController
+```
+
+or
+
+```swift
+
+class ViewController: UIViewController {
+
+  override func loadView() { // <-- add
+    if(!self.lx_loadView()) {
+      super.loadView()
+    }
+  }
+  
+}
 
 ```
 
