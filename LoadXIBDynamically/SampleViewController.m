@@ -14,6 +14,14 @@
 
 @implementation SampleViewController
 
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if( self ) {
+        _animationDuration = 1;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -54,7 +62,7 @@
 #pragma mark private
 
 -(void)animateView:(UIView*)view {
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:self.animationDuration animations:^{
         view.transform = CGAffineTransformMakeRotation(M_PI);
     } completion:^(BOOL finished) {
         view.transform = CGAffineTransformMakeRotation(0);

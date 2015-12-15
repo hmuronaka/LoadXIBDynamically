@@ -11,4 +11,6 @@
 
 @interface SampleViewController : LXDViewController
 
+@property(nonatomic, assign) CGFloat animationDuration;
+
 @end
